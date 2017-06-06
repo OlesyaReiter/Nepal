@@ -46,4 +46,10 @@ main{
     nav{
         width: auto;
     }
+
+    .logo-img{
+        width: 20%;
+        top: 20px !important;
+
+    }
 }
