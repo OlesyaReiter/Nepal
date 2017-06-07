@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/slide.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nature.css">
+    <script src="js/nav.js"></script>
     <title>4 Good Reasons</title>
 </head>
 
@@ -24,19 +25,19 @@
             <div class="mySlides fade">
             <div class="numbertext">1 / 4</div>
             <img class="slide-img" src="images/slide11.jpg" >
-            <div class="logo"></div>
+            
             </div>
 
             <div class="mySlides fade">
             <div class="numbertext">2 / 4</div>
             <img class="slide-img" src="images/slide22.jpg" >
-            <div class="logo"></div>
+
             </div>
 
             <div class="mySlides fade">
             <div class="numbertext">3 / 4</div>
             <img class="slide-img" src="images/slide33.jpg" >
-            <div class="logo"></div>
+
             </div>
 
             <div class="mySlides fade">
@@ -66,11 +67,11 @@
     <div class="wrapper">
 
         <nav class="pullLeft">
-            <a>Nature</a>
-            <a>People</a>
-            <a>Jungle</a>
-            <a>Friends</a>
-            <a>Contact us</a>
+            <a onclick="switchPage('nature')" id="nature_button" class="selected-button nohover">Nature</a>
+            <a onclick="switchPage('people')" id="people_button" >People</a>
+            <a onclick="switchPage('jungle')" id="jungle_button">Jungle</a>
+            <a onclick="switchPage('friends')" id="friends_button">Friends</a>
+            <a onclick="switchPage('contact_us')" id="contact_us_button">Contact us</a>
         </nav>
 
         <main> 
@@ -132,10 +133,10 @@
                 <div class="bl fl6">6</div>-->
 
             </section>
-            <!--<section class="section" id="people">People content</section>
-            <section class="section" id="jungle">Jungle content</section>
-            <section class="section" id="friends">Friends content</section>
-            <section class="section" id="contact_us">Form and request a list of participants </section>-->
+            <section class="section" id="people" style="display: none;">People content</section>
+            <section class="section" id="jungle" style="display: none;">Jungle content</section>
+            <section class="section" id="friends" style="display: none;">Friends content</section>
+            <section class="section" id="contact_us" style="display: none;">Form and request a list of participants </section>
         </main>
 
     </div>
