@@ -1,6 +1,6 @@
-/** {box-sizing:border-box}
-body {font-family: Raleway, Verdana,sans-serif;}*/
-.mySlides {display:none}
+* {box-sizing:border-box}
+
+
 
 /* Slideshow container */
 .slideshow-container {
@@ -81,3 +81,4 @@ header > div > h1 {
   width:100%; 
   /*min-height: 200px;*/
 }
+
