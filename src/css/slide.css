@@ -82,3 +82,9 @@ header > div > h1 {
   /*min-height: 200px;*/
 }
 
+.dots-container{
+    position: absolute;
+    margin-top: -30px;
+    text-align: center;
+    width: 100%;
+}
