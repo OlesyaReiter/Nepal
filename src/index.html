@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/nature.css">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/loader_table.css">
+    <link rel="stylesheet" href="css/modal_popup.css">
     <script src="js/nav.js"></script>
     <script src="js/loader.js"></script>
     <script src="https://use.fontawesome.com/f3fca8b6e1.js"></script>
@@ -169,21 +170,25 @@
                         <a onclick="loadMembers()" class="load-members">
                             <i class="fa fa-spinner fa-spin fa-2x fa-fw" id="spinner"></i>
                             Load team members</a>
+                    </div>                    
+
+                    <!-- Modal window -->
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <h2>Team members</h2>
+                            </div>                            
+                            <!-- Table for people -->
+                            <table id="loader_table">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Gender</th>
+                                </tr>                        
+                            </table>
+                        </div>
                     </div>
-                    <table id="loader_table">
-                        <tr>
-                            <th>Name</th>
-                            <th>Gender</th>
-                        </tr>
-                        <!--<tr>
-                            <td>Alfreds Futterkiste</td>
-                            <td>Maria Anders</td>     
-                        </tr>
-                        <tr>
-                            <td>Centro comercial Moctezuma</td>
-                            <td>Francisco Chang</td>                            
-                        </tr>                        -->
-                    </table>
                 </section>
             </main>
 

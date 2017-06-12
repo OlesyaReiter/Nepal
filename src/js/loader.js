@@ -12,7 +12,7 @@ function loadMembers() {
 
                 //Finding the table to show people
                 var table = document.getElementById('loader_table');
-                table.style.display = 'block';
+                table.style.display = 'table';
                 if (table) {
                     for (var i = 0; i < peopleArray.length; i++) {
                         var row = table.insertRow(table.rows.length);
@@ -22,7 +22,11 @@ function loadMembers() {
                         cell2.innerHTML = peopleArray[i].gender;
                     }
                 }
-
+                //Shows the modal window
+                var modal = document.getElementById('myModal');
+                if (modal){
+                    modal.style.display = "block";
+                }
                 //Hide spinner
                 var spinner = document.getElementById('spinner');
                 if (spinner){
@@ -54,4 +58,12 @@ function loadMembers() {
     }
     //End clear
     xhr.send(null)
+}
+
+//Closes the modal window
+function closeModal(){
+    var modal = document.getElementById('myModal');
+    if (modal){
+        modal.style.display = "none";
+    }
 }
