@@ -1,9 +1,12 @@
 footer{
-    width: 100%;
+    width: auto;
     height: 150px;
     background: url(../images/footer.jpg) center center;
     background-size: cover;
+    padding: 20px;
+    color: white;
 }
+
 .copyright{
     
     float: right;
