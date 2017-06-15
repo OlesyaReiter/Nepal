@@ -8,20 +8,12 @@ function showSlides() {
     for (i = 0; i < slides.length; i++) {
        slides[i].style.display = "none";  
     }
-<<<<<<< HEAD
-    //Merge comment1
-=======
-    //Increment slideIndex by 1 to show next image every 3 seconds
->>>>>>> 4cf581878ea9c885447943df758aa46506c4be84
+    //Merge comment1, Increment slideIndex by 1 to show next image every 3 seconds
     slideIndex++;
     //For looping
     if (slideIndex> slides.length) {slideIndex = 1}    
     for (i = 0; i < dots.length; i++) {
-<<<<<<< HEAD
-        //Merge comment2
-=======
-        //Removes class active from all the dots by replacing class name 'active' with empty string ''
->>>>>>> 4cf581878ea9c885447943df758aa46506c4be84
+        //Merge comment2, Removes class active from all the dots by replacing class name 'active' with empty string ''  
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";  
