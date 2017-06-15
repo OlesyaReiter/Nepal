@@ -8,9 +8,12 @@ function showSlides() {
     for (i = 0; i < slides.length; i++) {
        slides[i].style.display = "none";  
     }
+    //Increment slideIndex by 1 to show next image every 3 seconds
     slideIndex++;
+    //For looping
     if (slideIndex> slides.length) {slideIndex = 1}    
     for (i = 0; i < dots.length; i++) {
+        //Removes class active from all the dots by replacing class name 'active' with empty string ''
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";  
