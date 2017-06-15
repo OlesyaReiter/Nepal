@@ -1,6 +1,6 @@
 var slideIndex = 0;
 showSlides();
-
+//Merge 3
 function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
@@ -13,7 +13,7 @@ function showSlides() {
     //For looping
     if (slideIndex> slides.length) {slideIndex = 1}    
     for (i = 0; i < dots.length; i++) {
-        //Merge comment2, Removes class active from all the dots by replacing class name 'active' with empty string ''  
+    //Merge comment2, Removes class active from all the dots by replacing class name 'active' with empty string ''  
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";  
